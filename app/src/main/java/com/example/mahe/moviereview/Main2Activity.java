@@ -42,11 +42,11 @@ public class Main2Activity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 final Movie m = arrayList.get(i);
-                String text = "Name : "+m.name+"\n"+m.year+"\n"+m.rating;
+                String text = "Name : "+m.name+"Year : \n"+m.year+"Rating : \n"+m.rating;
                 Toast.makeText(getApplicationContext(),text,Toast.LENGTH_SHORT).show();
             }
         });
-        listView.setAdapter(adapter);//
+        listView.setAdapter(adapter);
     }
 }
 class Movie
